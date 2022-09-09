@@ -1,11 +1,12 @@
 # school
 school management system
 
-This is a school management system for a senior high school, but it can change to college by just changing some data and codes.
+This is a school management system for a senior high school, but is easy to convert into college by just changing some data and codes.
 Scenario: Once the student passed the entrance exam/once they are accepted to the school, 
 they will be ask to go to Technical office of the school and the admin will create their 
-account just by entering the data of the student. The student should wait for the announcement 
-of the schedule of their enrollment. After they successfully enrolled, their data would be stored to the database of the system.
+account just by entering the data of the student, the email, student number and password(qwerty123) is auto generated. 
+The student should wait for the announcement of the schedule of their enrollment. After they successfully enrolled, 
+their data will be stored to the database of the system.
 
 Userlevel: Admin Student Teacher
 Functionalities for Admin: Create Student account, Edit info of student, Deactivate/Activate student account, delete student account.
