@@ -52,3 +52,5 @@ and there is no school using this web application.
 Note Again: There are codes that are still in the css and js file that I did not use due to changes that I made
 during the development. (example: a class for this design, a function for this event)
 
+Video Demo Link: https://drive.google.com/file/d/1Wzc4ajXDQzkNLDfyKTAXwPUzqKx6lLRQ/view?usp=sharing
+
