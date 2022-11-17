@@ -9,7 +9,7 @@ if(!isset($_SESSION['firstname'])){
 if(isset($_POST['deletebutton'])){
 	$sql = "DELETE FROM users WHERE id=50";
 }
-$sql_user='SELECT * FROM users WHERE userlevel ="Student"';
+$sql_user='SELECT * FROM users WHERE userlevel ="Student" ORDER BY status ASC';
 $result_user=mysqli_query($conn,$sql_user);
 
 
@@ -59,10 +59,8 @@ $result_user = mysqli_query($conn, $sql_user);
 
 			<select id="selectYear" class="selectYear"name="selectYear">
 				<option value="all">Year</option>
-				<option value="1">First Year</option>
-				<option value="2">Second Year</option>
-				<option value="3">Third Year</option>
-				<option value="4">Fourth Year</option>
+				<option value="11">Grade 11</option>
+				<option value="12">Grade 12</option>
 			</select>
 			<input type="text" name="searchStudent"class="searchStudent"id="searchStudent"placeholder="Search for last name.">
 

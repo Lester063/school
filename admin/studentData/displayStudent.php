@@ -8,12 +8,12 @@ if(isset($_POST['action'])=="search_students"){
     AND
     lastname LIKE '%".$searchStudent."%'
     AND
-    year LIKE '%".$student_year."%'
+    year LIKE '%".$student_year."%' ORDER BY status ASC
     ";
     $result_user=mysqli_query($conn,$sql_user);
     if($student_year=="all"){
         $sql_user="SELECT * FROM users WHERE userlevel ='Student'
-        AND lastname LIKE '%".$searchStudent."%'
+        AND lastname LIKE '%".$searchStudent."%' ORDER BY status ASC
 
         ";
         $result_user=mysqli_query($conn,$sql_user);
@@ -34,7 +34,6 @@ if(isset($_POST['action'])=="search_students"){
         <td colspan=10 style="text-align:center;background-color:#349beb;font-size:30px"><b>STUDENTS</b></td>
     </tr>
     <tr>
-        <td><b>SN</b></td>
         <td style="width:200px;"><b>Email</b></td>
         <td style="width:280px;"><b>Full Name</b></td>
         <td><b>Year</b></td>
@@ -48,7 +47,6 @@ while($row = mysqli_fetch_assoc($result_user)){
 ?>
 
 <tr class="asd"id="<?Php echo $row['id'];?>">
-	<td><?Php echo $row['student_number'];?></td>
 	<td><?Php echo $row['email'];?></td>
 	<td><?Php echo $row['lastname'].", ". $row['firstname']. " ".$row['middlename'];?></td>
 	<td><?Php echo $row['year'];?></td>

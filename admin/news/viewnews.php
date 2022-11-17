@@ -32,14 +32,14 @@ if(!isset($_SESSION['firstname'])){
 <div class="wrap"id="wrap">
 <div class="container mt-5">
 <div class="col-sm-12">
-<h3>ADVISORY</h3>
+<h3>VIEW NEWS</h3>
         <table class="table">
             <tr>
                 <th>#</th>
                 <th>Headline</th>
-                <th>Action</th>
                 <th>Header</th>
-                <th>Delete</th>
+                <th>View</th>
+                <th>Action</th>
             </tr>
         <?php 
         $c=0;

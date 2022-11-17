@@ -25,7 +25,7 @@ $result_get_drop_data=mysqli_query($conn,$get_drop_data);
 $getstudent_enId=mysqli_fetch_array(mysqli_query($conn, "SELECT * FROM enrollment WHERE student_number='$student_number' AND schoolyear='$student_schoolyear'"));
 $student_eId=$getstudent_enId['enrollment_id'];
 
-$getAll_subject="SELECT ss.*, sub.*, sec.* FROM section_subject ss, subject sub, section sec WHERE ss.subject_id=sub.subject_id AND ss.section_id=sec.section_id AND schoolyear='$student_schoolyear'";
+$getAll_subject="SELECT ss.*, sub.*, sec.*, t.* FROM section_subject ss, subject sub, section sec, teacher t WHERE ss.teacher_id=t.teacher_id AND ss.subject_id=sub.subject_id AND ss.section_id=sec.section_id AND sec.schoolyear='$student_schoolyear' ORDER BY section_subjectId ASC";
 $result_getAll_subject=mysqli_query($conn,$getAll_subject);
 ?>
 <html>

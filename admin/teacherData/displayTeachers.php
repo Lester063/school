@@ -7,7 +7,7 @@ if(isset($_POST['action'])=="search"){
 	$sql_teacher="SELECT * FROM teacher WHERE 
     teacher_department LIKE '%".$se."%'
 	AND
-	teacher_firstname LIKE '%".$st."%'
+	teacher_lastname LIKE '%".$st."%'
 	AND
 	teacher_rank LIKE '%".$tr."%'";
 	$result_teacher = mysqli_query($conn, $sql_teacher);

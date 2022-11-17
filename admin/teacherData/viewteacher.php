@@ -35,7 +35,7 @@ if(!isset($_SESSION['firstname'])){
 <div class="wrap"id="wrap">
 <div class="container mt-5">
 	<div class="col-sm-12">
-	<h3>ADVISORY</h3>
+	<h3>VIEW TEACHERS</h3>
 
 				<p><?Php echo $message?></p>
 				<div class="deletemessage"id="deletemessage"style="display:none;"></div>

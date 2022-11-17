@@ -1,0 +1,90 @@
+body{
+    margin:0;
+}
+*{box-sizing: border-box;}
+.container{
+    width:1200px;
+    height:500px;
+    margin:0 auto;
+}
+.loginBox{
+    width:500px;
+    height:400px;
+    background-color:#fff;
+    position:relative;
+    right:0;
+    left:0;
+    top:100px;
+    margin:0 auto;
+    padding:15px 50px 15px 50px;
+}
+.loginBox p{
+    font-weight:bold;
+    font-size:30px;
+}
+.loginBox [class*="input"]{
+    width:400px;
+    height:50px;
+    margin-bottom:10px;
+    border:none;
+    background-color: #fff;
+    resize: none;
+    outline: none;
+    border-bottom:1px solid #000;
+}
+.login-submitButton{
+    width:150px;
+    background-color:#349beb;
+    border:1px solid #349beb;
+    cursor: pointer;
+    color:#fff;
+    font-size:20px;
+    float:right;
+    padding:10px;
+}
+.login-submitButton:hover{
+    color:#ddd;
+}
+.login-submitButton:active{
+    border:2px solid #000;
+}
+
+
+.adminNav{
+    height:100vh;
+    width:300px;;
+    background-color:red;
+    color:#fff;
+    position: fixed;
+    z-index: 1;
+    top: 60px;
+    left: 0;
+}
+.adminNav ul li{
+    list-style-type:none;
+    padding:10px 0px 10px 0px;
+}
+.adminNav ul{
+    display:inline-block;
+}
+.adminNav a:not(.closeNav){
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #000;
+    display: block;
+    transition: 0.3s;
+}
+.adminNav ul li a:hover{
+    color:grey;
+}
+.closeNav{
+    float:right;
+    color:#fff;
+    font-size:30px;
+    text-decoration:none;
+    font-weight:bolder;
+    z-index:2;
+    display:none;
+}
+

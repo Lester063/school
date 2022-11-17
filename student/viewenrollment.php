@@ -27,7 +27,7 @@ $section_time = mysqli_fetch_assoc(mysqli_query($conn, "SELECT * FROM section WH
 $enrolled = "SELECT * FROM enrollment WHERE student_id='$student_id' AND schoolyear='$schoolyear'";
 $enrolled_result= mysqli_query($conn, $enrolled);
 
-$section_sy="SELECT * FROM section WHERE grade_year=$year and schoolyear='$schoolyear'";
+$section_sy="SELECT * FROM section WHERE grade_year=$year and schoolyear='$schoolyear' AND section_course='$myCourse'";
 $result_section_sy=mysqli_query($conn,$section_sy);
 ?>
 <!DOCTYPE html>

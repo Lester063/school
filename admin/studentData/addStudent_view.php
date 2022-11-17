@@ -18,7 +18,7 @@ if(!isset($_SESSION['firstname'])){
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../../css/styles.css">
 	<script src="../../js/js.js"></script>
-    <title>Document</title>
+    <title>Add Student</title>
 </head>
 <body>
 <div class="messageTo"id="messageTo"></div>
@@ -55,6 +55,7 @@ if(!isset($_SESSION['firstname'])){
                 <option value="">Year Level</option>
                 <option value="11">Grade 11</option>
                 <option value="12">Grade 12</option>
+                <option value="Graduate">Graduate</option>
             </select>
 
             <br>

@@ -8,7 +8,7 @@ if(!isset($_SESSION['teacher_id'])){
 $teacher_firstname=$_SESSION['teacher_firstname'];
 $teacher_id=$_SESSION['teacher_id'];
 $schoolyear=$_SESSION['schoolyear'];
-$advisory_class=$_SESSION['advisory_class'];
+
 
 
 

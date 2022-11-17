@@ -77,7 +77,7 @@ function addStudent(){
 			<td><b>$theLastEmail</b></td>
 		</tr>
 		<tr>
-			<td>Email: </td>
+			<td>Student Number: </td>
 			<td><b>$student_number</b></td>
 		</tr>
 		<tr>

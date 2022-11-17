@@ -93,7 +93,14 @@ function deleteSection(){
     $section_id = $_POST["section_id"];
   
     $rows = mysqli_fetch_assoc(mysqli_query($conn, "SELECT * FROM section WHERE section_id = $section_id"));
+
     
+
+    mysqli_query($conn, "DELETE FROM enrollment WHERE section_id=$section_id");
+    mysqli_query($conn, "DELETE FROM enrolled_subject WHERE section_id = $section_id");
+    mysqli_query($conn, "DELETE FROM advisers WHERE section_id = $section_id");
+    mysqli_query($conn, "DELETE FROM add_drop_subject WHERE section_id = $section_id");
+    mysqli_query($conn, "DELETE FROM section_subject WHERE section_id = $section_id");
     mysqli_query($conn, "DELETE FROM section WHERE section_id = $section_id");
     echo 1;
 
