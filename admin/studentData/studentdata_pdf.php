@@ -2,27 +2,27 @@
 require_once('../../includes/connect.php');
 require_once('../../pdflibrary/fpdf.php');
 
-$id=$_GET['id'];
-$sql_section="SELECT u.*, en.*, s.* FROM users u, enrollment en, section s
+$id = $_GET['id'];
+$sql_section = "SELECT u.*, en.*, s.* FROM users u, enrollment en, section s
 WHERE u.student_number=en.student_number AND s.section_id=en.section_id
-AND u.id=$id";
-$result_section=mysqli_query($conn,$sql_section);
+AND u.id = $id";
+$result_section = mysqli_query($conn, $sql_section);
 
-$sql_getInfo="SELECT u.*, en.*, es.* FROM users u, enrollment en, enrolled_subject es
-WHERE u.student_number=en.student_number AND u.student_number=es.student_number
-AND u.id=$id";
-$result=mysqli_query($conn,$sql_getInfo);
+$sql_getInfo = "SELECT u.*, en.*, es.* FROM users u, enrollment en, enrolled_subject es
+WHERE u.student_number = en.student_number AND u.student_number = es.student_number
+AND u.id = $id";
+$result = mysqli_query($conn, $sql_getInfo);
 
-$student=mysqli_fetch_array(mysqli_query($conn,"SELECT * FROM users WHERE id=$id"));
+$student = mysqli_fetch_array(mysqli_query($conn, "SELECT * FROM users WHERE id = $id"));
 
 $pdf = new FPDF();
 $pdf->AddPage();
 $pdf->SetFont('Arial','',13);
 
-$firstname=$student['firstname'];
-$middlename=$student['middlename'];
-$lastname=$student['lastname'];
-$course=$student['course'];
+$firstname = $student['firstname'];
+$middlename = $student['middlename'];
+$lastname = $student['lastname'];
+$course = $student['course'];
   $pdf->Cell(15,10,"Name:");
   $pdf->Cell(100,10,$firstname." ".$middlename." ".$lastname);
   $pdf->Ln();

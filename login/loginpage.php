@@ -2,7 +2,6 @@
 require_once('../includes/connect.php');
 session_start();
 
-
 ?>
 <!DOCTYPE html>
 <html>
@@ -13,7 +12,6 @@ session_start();
 </head>
 <body>
     <div class="container">
-
         <div class="loginBox">
             <p>Student</p>
             <input type="text"id="studentEmail" placeholder="Email" class="inputUsername"name="email">
@@ -22,23 +20,6 @@ session_start();
 			<b id="incorrectPassword"style="color:red;font-size:10px;"></b>
             <input type="submit"onclick="studentLogin()"name="login" value="Login"class="login-submitButton">
         </div>
-
-
-
-
-
-
-
-
-
-
-
-
     </div>
-
-<script>
-
-</script>
 </body>
-
 </html>

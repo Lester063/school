@@ -9,26 +9,22 @@ $firstname=$_SESSION['firstname'];
     <link rel="stylesheet" href="../css/styles.css">
     <script src="../js/js.js"></script>
     <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
-          
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/2.0.1/css/toastr.css" rel="stylesheet"/>
-            
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/2.0.1/css/toastr.css" rel="stylesheet"/>  
     <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/2.0.1/js/toastr.js"></script>
     <script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
-
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
     <title>View Sections</title>
-    
 </head>
-    <body>
-        <div class="studentNavbar">
-            <b>Welcome, <?Php echo $firstname?>!</b>
-            <button type="submit"onclick="adminnav_rightSlide()"class="nav_rightSlide"id="adminnav_rightSlide"><i class="fa fa-bars" aria-hidden="true"></i></button>
-        </div>
+<body>
+    <div class="studentNavbar">
+        <b>Welcome, <?Php echo $firstname?>!</b>
+        <button type="submit"onclick="adminnav_rightSlide()"class="nav_rightSlide"id="adminnav_rightSlide"><i class="fa fa-bars" aria-hidden="true"></i></button>
+    </div>
 
-        <div class="student_sidebar"id="admin_sidebar">
-            <div class="link_sidebar"id="adminlink_sidebar">
+    <div class="student_sidebar"id="admin_sidebar">
+        <div class="link_sidebar"id="adminlink_sidebar">
         <ul>
             <li><a href="../adminPage/adminpage.php">DASHBOARD</a></li>
             <li><a href="../studentData/viewstudent.php">VIEW STUDENTS</a></li>
@@ -49,7 +45,5 @@ $firstname=$_SESSION['firstname'];
                 <a href="../../login/logout.php">LOGOUT</a>
             </div>
         </div>
-
-
-    </body>
+</body>
 </html>

@@ -1,9 +1,9 @@
 <?Php
 require_once('../includes/connect.php');
+$firstname = $_SESSION['firstname'];
 
-
-$firstname=$_SESSION['firstname'];
 ?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -34,9 +34,6 @@ $firstname=$_SESSION['firstname'];
 </style>
 </head>
 <body>
-
     <div class="header"><a href="logout.php">Logout</a><a href="adminpage.php"style="float:left;"><?php echo $firstname; ?></a></div>
-
 </body>
-
 </html>

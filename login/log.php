@@ -1,18 +1,13 @@
 <?Php
 session_start();
-
-
-
-if($_SESSION['userlevel']=='ADMIN'){
+if($_SESSION['userlevel'] == 'ADMIN') {
 	header('Location:../admin/adminPage/adminpage.php');
 }
-else if($_SESSION['teacher_userlevel']=='TEACHER'){
+else if($_SESSION['teacher_userlevel'] == 'TEACHER') {
 	header('Location:../teacher/teacherpage.php');
 }
-else{
+else {
 	header('Location:../student/studentpage.php');
 }
-
-
 
 ?>
