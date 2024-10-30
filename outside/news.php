@@ -79,7 +79,7 @@ $result_news = mysqli_query($conn,$sqlnews);
                         <p><?php echo $getContent[0]?></p>
                     </div>
                     <div class="bg-secondary">
-                        <a href="http://localhost/college/outside/news.php?headline=<?php echo $row['headline']?>&news_id=<?php echo $row['news_id']?>"class="text-white text-decoration-none">CHECK IT OUT</a>
+                        <a href="http://localhost/school/outside/news.php?headline=<?php echo $row['headline']?>&news_id=<?php echo $row['news_id']?>"class="text-white text-decoration-none">Click here</a>
                     </div>
                 </div>
                 <?php

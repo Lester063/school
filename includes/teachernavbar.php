@@ -8,6 +8,7 @@ $teacher_id = $_SESSION['teacher_id'];
 <!DOCTYPE html>
 <html>
 <head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="../css/styles.css">
     <script src="../js/js.js"></script>
     <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>   
@@ -50,7 +51,6 @@ $teacher_id = $_SESSION['teacher_id'];
                     <li><a href="teacher_viewinfoblade.php"><b>VIEW PROFILE</b></a></li>
                     <li><a href="changepasswordblade.php"><b>PASSWORD</b></a></li>
                 </ul>
-                <li> <a href="EHEHE.php"><b>EHEHE</b></a></li>
             </ul>
         </div>
 

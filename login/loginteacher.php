@@ -14,7 +14,7 @@ session_start();
 <body>
     <div class="container">
         <div class="loginBox">
-            <p>Faculty</p>
+            <p>Teacher</p>
             <input type="text" id="teacherEmail"placeholder="Email" class="inputUsername"name="teacher_email">
 			<b id="teacher_invalidEmail"></b>
             <input type="password" id="teacherPassword"placeholder="Password" class="inputPassword"name="teacher_password">

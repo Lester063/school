@@ -24,7 +24,7 @@ $result_section = mysqli_query($conn, $sql_section);
                     <tr>
                         <td colspan=2><b>EDIT TEACHER</b></td>
                     </tr>
-                    <input type="text"value="<?Php echo $teacher_id?>" name="teacher_id" id="put_teacher_id">
+                    <input type="hidden"value="<?Php echo $teacher_id?>" name="teacher_id" id="put_teacher_id">
 
                     <tr>
                         <td><label>EMAIL</label></td>

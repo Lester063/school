@@ -3,6 +3,9 @@ require_once('../includes/connect.php');
 
 if(isset($_POST["import"])) {
     $teacher_id = $_POST['teacher_id'];
+    $subject_id = $_POST['subject_id'];
+    $section_id = $_POST['section_id'];
+    $schoolyear = $_POST['schoolyear'];
     
     $fileName = $_FILES["excel"]["name"];
     $fileExtension = explode('.', $fileName);
@@ -22,11 +25,8 @@ if(isset($_POST["import"])) {
 
     $number=0;
     foreach($reader as $key => $row) {
+        $number++;
         if($number>=3) {
-            $subject_id = $_POST['subject_id'];
-            $section_id = $_POST['section_id'];
-            $schoolyear = $_POST['schoolyear'];
-
             $student_number = $row[0];
             $first_grading = $row[1];
             $second_grading = $row[2];
@@ -47,20 +47,19 @@ if(isset($_POST["import"])) {
                 echo
                 "
                 <script>
-                alert('Some of the student does not exist on the list of enrolled student, Please check your data.');
-                document.location.href = 'sectionhandle.php';
+                alert('We successfully imported the data, but some of the student does not exist on the list of enrolled student, Please check your data.');
+                document.location.href = 'sectionhandlestudentblade.php?section_id=$section_id&subject_id=$subject_id';
                 </script>
                 ";
             }
         }
-        $number++;
     }
 
     echo
     "
     <script>
     alert('Succesfully Imported');
-    document.location.href = 'sectionhandlestudentblade.php?section_id = $section_id&subject_id = $subject_id';
+    document.location.href = 'sectionhandlestudentblade.php?section_id=$section_id&subject_id=$subject_id';
     </script>
     ";
 }
@@ -69,7 +68,7 @@ else{
     "
     <script>
     alert('Failed to import');
-    document.location.href = 'sectionhandlestudentblade.php?section_id = $section_id&subject_id = $subject_id';
+    document.location.href = 'sectionhandlestudentblade.php?section_id=$section_id&subject_id=$subject_id';
     </script>
     ";
 }

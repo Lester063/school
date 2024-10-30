@@ -36,11 +36,11 @@ $gsub=mysqli_fetch_array(mysqli_query($conn,"SELECT * FROM subject WHERE subject
     <div class="teacherwrapper"id="teacherwrapper">
         <div class="container mt-5">
             <div class="col-sm-12" style="overflow:auto">
-                <h3>ADVISORY</h3>
+                <h3><?php echo $section['grade_year'].$section['section'].' - '.$gsub['subject']?></h3>
                 <table>
                     <a href="sectionhandle.php">Back</a>
                     <tr>
-                        <td colspan=8><b>List of Student - <?php echo $section['grade_year'].$section['section'].$gsub['subject']?><b>
+                        <td colspan=8><b>Student list of <?php echo $section['grade_year'].$section['section'].' - '.$gsub['subject']?><b>
                         <button type="button" class="uploadButton"name="uploadButton"id="<?php echo $_GET['section_id']?>"onclick ="openUpload(<?php echo $_GET['section_id'] ?>)">Upload Grades</button>
                         </td>
                     </tr> 

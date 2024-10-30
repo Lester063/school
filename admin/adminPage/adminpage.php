@@ -59,8 +59,8 @@ $news=mysqli_num_rows(mysqli_query($conn,"SELECT * FROM news"));
                 ?>
                 <b><?php echo 'Students: '.$userCount?></b><br>
                 <hr>
-                <b><?php echo 'First Year: '.$firstyearCount?></b><br>
-                <b><?php echo 'Second Year: '.$secondyearCount?></b><br>
+                <b><?php echo 'Grade 11: '.$firstyearCount?></b><br>
+                <b><?php echo 'Grade 12: '.$secondyearCount?></b><br>
             </div>
 
 

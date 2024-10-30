@@ -34,7 +34,7 @@ if(isset($_POST['login'])) {
 <body>
     <div class="container">
 		<form action="loginadmin.php" method="POSt">
-			<div class="loginBox"style="border:1px solid #000;border-radius:5px;">
+			<div class="loginBox">
 				<p>Admin</p>
 				<input type="text" placeholder="Email" class="inputUsername"name="email">
 				<input type="password" placeholder="Password" class="inputPassword"name="password">

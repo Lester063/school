@@ -19,7 +19,7 @@ require_once('../../includes/connect.php');
                     <tr>
                         <td colspan=2><b>EDIT SECTION</b></td>
                     </tr>
-                    <input type="text" name="action" value="action_updateSection">
+                    <input type="hidden" name="action" value="action_updateSection">
                     <td><input type="hidden" name="editsection_id"id="editsection_id"placeholder="SY(eg.2022-2023)"required="">
                     <td><input type="hidden" name="editsection_schoolyear"id="editsection_schoolyear"placeholder="SY(eg.2022-2023)"required="">
 

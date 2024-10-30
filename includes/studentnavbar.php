@@ -9,6 +9,7 @@ $student_number = $_SESSION['student_number'];
 <!DOCTYPE html>
 <html>
 <head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="../css/styles.css">
     <script src="../js/js.js"></script>
     <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>    
@@ -35,7 +36,6 @@ $student_number = $_SESSION['student_number'];
                     <li><a href="viewmyprofile.php"><b>VIEW PROFILE</b></a></li>
                     <li><a href="studentpassword.php"><b>PASSWORD</b></a></li>
                 </ul>
-                <li> <a href="EHEHE.php"><b>EHEHE</b></a></li>
             </ul>
         </div>
         <div class="logout_sidebar"id="logout_sidebar">

@@ -2,7 +2,7 @@
 require_once('../includes/connect.php');
 session_start();
 
-if($_SESSION['userlevel'] == 'Admin') {
+if($_SESSION['userlevel'] == 'ADMIN') {
     session_unset();
     session_destroy();
 	header('Location:../login/loginadmin.php');

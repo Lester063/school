@@ -22,7 +22,7 @@ require_once('../../includes/connect.php');
                     <tr>
                         <td colspan=2><b>Update my Info</b></td>
                     </tr>
-                    <input type="text" name="admin_id" id="admin_id">
+                    <input type="hidden" name="admin_id" id="admin_id">
 
                     <tr>
                         <td><label>EMAIL</label></td>

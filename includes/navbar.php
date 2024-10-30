@@ -6,6 +6,7 @@ $firstname=$_SESSION['firstname'];
 <!DOCTYPE html>
 <html>
 <head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="../css/styles.css">
     <script src="../js/js.js"></script>
     <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>

@@ -71,13 +71,14 @@ $result_section_sy = mysqli_query($conn,$section_sy);
                                 $end= $rowsection['end_date'];
                                 if($current >= $start AND $current <= $end AND $rowsection['section_status'] == 'ONGOING') {
                     ?>
+                    
                     <table class = "sectiontable-enrollment"id = "sectiontable-enrollment">
                         <tr>
                             <th colspan=2><input type = "hidden"id = "schoolyear"name = "schoolyear"value = "<?Php echo $rowsection['schoolyear']?>"><?Php echo "SY:". $rowsection['schoolyear']?></th>
                         </tr>
 
                         <tr>
-                            <td colspan=2><input type = "radio"id = "section_id"name = "section_id"value = "<?Php echo $rowsection['section_id']?>"><?Php echo $rowsection['section_course'].$rowsection['grade_year'].$rowsection['section']?></td>
+                            <td colspan=2><input type = "radio" id = "section_id" name = "section_id"value = "<?Php echo $rowsection['section_id']?>"><?Php echo $rowsection['section_course'].$rowsection['grade_year'].$rowsection['section']?></td>
                         </tr>
 
                         <tr>
